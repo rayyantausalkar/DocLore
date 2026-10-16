@@ -1,0 +1,22 @@
+[project]
+name = "doclore-api"
+version = "0.1.0"
+description = "FastAPI backend for DocLore"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi>=0.143.1",
+    "langgraph>=1.2.15",
+    "pyyaml>=6.0.3",
+    "uvicorn[standard]>=0.54.0",
+]
+
+[build-system]
+requires = ["uv_build>=0.12.15,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "httpx>=0.28.1",
+    "pillow>=12.3.0",
+    "pytest>=9.1.1",
+]
